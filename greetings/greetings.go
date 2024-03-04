@@ -9,7 +9,7 @@ import (
 func Hello(name string) (string,error){
 	// If no name was given, return an error with a message.
 	if name == "" {
-		return "", errors.New("Empty Name BOZO")
+		return "", errors.New("empty name bozo")
 	}
 
 	message := fmt.Sprintf(randomFormat(), name)
@@ -19,6 +19,8 @@ func Hello(name string) (string,error){
 // randomFormat returns on of a set of greeting messages. the Returned
 // message is selected at random 
 func randomFormat() string {
+	// define a number variable
+
 	// A slice of message formats.
 	formats := []string{
 		"Hi, %v. Welcome!",
