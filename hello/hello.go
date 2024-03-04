@@ -10,7 +10,7 @@ func main(){
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
-	message, err := greetings.Hello("Yleo")
+	message, err := greetings.Hello("Guka")
 	
 	if err != nil{
 		log.Fatal(err)	
