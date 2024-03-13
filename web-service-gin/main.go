@@ -16,7 +16,7 @@ type album struct {
 func main(){
 	router := gin.Default()
 	router.GET("/albums", getAlbums)
-	
+	// Starting the server	
 	router.Run("Localhost:8080")
 }
 
